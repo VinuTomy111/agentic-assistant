@@ -1,0 +1,6 @@
+groq
+duckduckgo-search
+streamlit
+rich
+python-dotenv
+pydantic
