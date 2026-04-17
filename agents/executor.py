@@ -5,7 +5,7 @@ from tools import AVAILABLE_TOOLS
 class ExecutorAgent:
     def __init__(self, api_key: str):
         self.client = Groq(api_key=api_key)
-        self.model = "llama3-8b-8192"
+        self.model = "openai/gpt-oss-120b"
 
     def execute_plan(self, plan: list, user_query: str) -> str:
         """

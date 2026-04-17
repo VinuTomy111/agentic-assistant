@@ -6,7 +6,7 @@ from tools import TOOL_DESCRIPTIONS
 class PlannerAgent:
     def __init__(self, api_key: str):
         self.client = Groq(api_key=api_key)
-        self.model = "llama3-8b-8192" # Or an appropriate groq model like "mixtral-8x7b-32768"
+        self.model = "openai/gpt-oss-120b" # Or an appropriate groq model like "mixtral-8x7b-32768"
         
     def plan(self, user_query: str, short_term_context: str, long_term_context: str) -> list:
         """
